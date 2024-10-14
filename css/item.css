@@ -1,0 +1,95 @@
+:root {
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+}
+
+body {
+    background-color: white;
+}
+
+.item-big {
+    margin-top: 220px;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+}
+
+.item-content .sm_img img {
+    width: 80px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.detailes .price {
+    display: flex;
+}
+
+.detailes .stars i {
+    margin: 20px 0;
+}
+
+.detailes .stars i,
+.price p span {
+    color: var(--main-color);
+}
+
+.detailes .price p span {
+    margin-right: 20px;
+}
+
+.detailes .price .old-price {
+    text-decoration: line-through;
+}
+
+.detailes p span {
+    color: black;
+    font-weight: 500;
+}
+
+.detailes .stoke,
+.detailes .plus {
+    color: var(--main-color);
+}
+
+.detailes p {
+    margin-bottom: 20px;
+}
+
+.detailes .pragh-item {
+    margin-bottom: 20px;
+}
+
+.detailes button {
+    border: none;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    background-color: #fcb700;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+}
+
+.slide {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .item-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

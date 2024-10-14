@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topico</title>
+    <!-- file css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/check.css">
+    <!-- file fontawson -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container top-nav ">
+            <img class="logo" src="img/logo-black.png">
+            <div class="search">
+                <input type="search" placeholder="Search For Products...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="cart-header">
+                <div onclick="open_cart()" class="icon-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <Span class="count-item">0</Span>
+                </div>
+                <div class="total-price">
+                    <p>My Cart:</p>
+                    <p class="price-cart-head">$0</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container links">
+                <span class="icon-bar" onclick="open_menu()"> <i class="fa-solid fa-bars "></i></span>
+                <ul class="menu">
+                    <span onclick="close_menu()" class="close-menu "><i class="fa-regular fa-circle-xmark"></i></span>
+                    <img class="logo logo-menu" src="img/logo-black.png">
+                    <li class="active"><a href="index.html">home</a></li>
+                    <li><a href="all-product.html">all products</a></li>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+                <div class="login-singup">
+                    <a href=""> login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="">sing up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <div class="cart ">
+        <div class="top-cart">
+            <h3>my cart<span class="count_item_in_cart"> </span></h3>
+            <span onclick="close_cart()" class="close-cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="item_in_cart">
+
+        </div>
+        <div class="bottom-cart">
+            <div class="total">
+                <p>cart subtotal</p>
+                <p class="price-cart-total"></p>
+            </div>
+        </div>
+        <div class="button-cart">
+            <a href="" class="btn-cart">Proceed to checkout</a>
+            <button class="btn-trans-cart">shop more</button>
+        </div>
+    </div>
+    <section class="check">
+        <div class="container">
+            <div class="check-content">
+                <div class="check-info">
+                    <div class="delivery-addres">
+                        <div class="head-deli">
+                            <h2>delivery addres</h2>
+                        </div>
+                        <form action="" method="get" class="form-example">
+                            <div class="form-example">
+                                <label for="name"> name: </label><br>
+                                <input type="text" name="name" id="name" required  placeholder="Enter your name"/>
+                            </div>
+                            <div class="form-example">
+                                <label for="email"> email: </label><br>
+                                <input type="email" name="email" id="email" required placeholder="Enter your email"/>
+                            </div>
+                            <div class="form-example">
+                                <label for="name"> addres: </label><br>
+                                <input type="text" name="name" id="name" required placeholder="Enter your addres"/>
+                            </div>
+                            <div class="form-example">
+                                <label for="name"> phone: </label><br>
+                                <input type="number" name="name" id="name" required placeholder="Enter yor phone" />
+                            </div>
+                            <div class="form-example">
+                              <!-- <button></button>> -->
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="Coupon-code">
+                        <div  class="head-deli">
+                            <h2>coupon code</h2>
+                        </div>
+                        <form action="" method="get" class="form-example">
+                            <div class="form-example">
+                                <label for="name">coupon code: </label><br>
+                                <input type="text" name="name" id="name" required placeholder="Enter coupon code" />
+                            </div>
+
+                        </form>
+                        <div class="order-summary"></div>
+                    </div>
+                </div>
+                
+                <div class="cart1">
+                    <div class="top-cart1">
+                        <h3>summary order<span class="count_item_in_cart1"> </span></h3>
+                    </div>
+               
+
+
+                    <div class="item_in_cart1">
+                        <div class="item-cart1">
+                            <img src="img/product/product-1.jpg" alt="">
+                            <div class="item-content1">
+                                <h4>Original Mobile Android Dual SIM Smart Phone G3</h4>
+                                <p class="cart-price">$234</p>
+                            </div>
+                           
+                        </div>
+
+                </div>
+                <div class="bottom-cart1">
+                    <div class="total1">
+                        <P>total</P>
+                        <p class="price-cart-total1">2</p>
+                    </div>
+                </div>
+                <div class="button-cart1">
+                    <a href="checkout.html" class="btn-cart1">Proceed to checkout</a>
+                    <!-- <button class="btn-trans-cart1">shop more</button> -->
+                </div>
+
+            </div>
+        </div>
+      
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start footer -->
+    <footer>
+        <div class="backtoup"><a href="#totop">back to up</a></div>
+        <div class="footer container">
+            <div class="footer-logo">
+                <img src="img/logo-white.png">
+                <div class="prg">
+                    <p>Add: Walls Street 68, Mahattan, New York, USA</p>
+                    <p>Email: info@thebuesky.com</p>
+                    <p>Fax: (+100) 123 456 7890 - (+100) 123 456 7891</p>
+                </div>
+            </div>
+            <div class="link-footer ">
+                <div class="link">
+                    <h4>information</h4>
+                    <ul>
+                        <li><a href="#"> Service </a></li>
+                        <li><a href="#">F.A.Q.’s</a></li>
+                        <li><a href="#">Ordering </a></li>
+                        <li><a href="#"> Contacts</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Popular</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#"> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#"> About us </a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Discount</a></li>
+                        <li><a href="#">Custom </a></li>
+                        <li><a href="#">Terms </a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h4>Payment & Shipping</h4>
+                    <ul>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Shipping Guide</a></li>
+                        <li><a href="#">Locations We Ship To</a></li>
+                        <li><a href="#">Estimated Delivery Time</a></li>
+                        <li><a href="#">Express</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="copy">
+            <a href="#totop" class="endfooter">Copyright © Topico. All Rights Reserved. ThemePure.</a>
+        </div>
+
+
+
+
+
+    </footer>
+    <!-- end footer -->
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- files js -->
+    <script src="js/main.js"></script>
+    <script src="js/check.js"></script>
+    <script src="js/all-product.js"></script>
+
+</body>
+
+</html>
